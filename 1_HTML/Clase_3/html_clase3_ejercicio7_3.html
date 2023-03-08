@@ -1,0 +1,140 @@
+<!-- HTML - Ejercicio 7 - Tercer Clase
+    
+   1. Crear una página para Ingreso de Datos Personales (título de la página). Los datos a solicitar son:
+
+        -Nombre (máximo 20 caracteres). Obligatorio
+        -Apellido (máximo 25 caracteres). Obligatorio
+        -DNI (sólo números). Obligatorio
+        -Correo electrónico. Obligatorio
+
+2.  Agregá a la página los siguientes campos:
+
+
+        -Estado Civil (Soltera/o, Casada/o, Divorciada/o, Viuda/o, Conviviente). Selección única. 
+        -Intereses (Culturales, Deportivos, Turísticos, Sociales, Otros). -Selección múltiple. 
+        -Descripción de Intereses (Texto de hasta 400 caracteres). 
+        -País de Residencia (Argentina, Bolivia, Brasil, Colombia, Costa Rica, Chile, México, Nicaragua, Panamá, Paraguay, Perú, Uruguay, Venezuela, Otro) Selección única. 
+        -Recibir información adicional (Seleccionado por omisión).
+
+3.  Investigar por tu cuenta, el uso de los siguientes elementos y aplícalos según lo indicado:
+
+        -Input de tipo date. Luego agregá a la página de Ingreso de Datos Personales, debajo del DNI, el control para que el usuario ingrese su Fecha de Nacimiento. 
+        -Input de tipo image. Luego reemplaza el botón de envío del formulario, por uno con una imagen elegida por vos.-->
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ingreso de datos personales</title>
+        </head>
+        <body>
+            <h1>Ingreso de Datos Personales</h1>
+        
+            <br><hr><br>
+
+            <main>
+                <section>
+                    <div>
+                        <fieldset>
+                            <legend>Completar el formulario</legend>
+                    
+                            <form action="http://www.example.com/login.php." method="post">
+                                
+                                <label for="nombre">Nombre</label>
+                                <input type="text" placeholder="Tu nombre" name="nombre" maxlength="20" required>
+
+                                <br><br>
+
+                                <label for="apellido">Apellido</label>
+                                <input type="text" placeholder="Tu apellido" name="apellido" maxlength="25" required>
+
+                                <br><br>
+
+                                <label for="dni">DNI</label>
+                                <input type="number" placeholder="Tu número de DNI sin puntos" name="dni" required>
+
+                                <br><br>
+
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" placeholder="example@tumail.com" name="email" required>
+                                
+                                <br><br>
+                    
+                                <label for="estado_civil">Estado Civil </label>
+                                <select name="estado_civil" id="estado_civil">
+                                    <option value="S"> Soltera/o </option>
+                                    <option value="C"> Casada/o </option>
+                                    <option value="D"> Divorciada/o </option>
+                                    <option value="V"> Viuda/o </option>
+                                    <option value="CV"> Conviviente </option>
+                                </select>
+                                
+                                <br><br>
+
+                                <label for="intereses">Intereses (puedes elegir más de una presionando ctrl+click) </label><br>
+                                <select name="intereses" id="intereses" multiple >
+                                    <option value="S"> Culturales </option>
+                                    <option value="C"> Deportivos </option>
+                                    <option value="D"> Turísticos </option>
+                                    <option value="V"> Sociales </option>
+                                    <option value="CV"> Otros </option>
+                                </select>
+                                
+                                <br><br>
+
+                                <label for="intereses">Intereses (puedes elegir más de una presionando ctrl+click)</label> <br>
+                                <input type="checkbox" name="intereses" value="Cult"> Culturales <br>
+                                <input type="checkbox" name="intereses" value="Dep"> Deportivos <br>
+                                <input type="checkbox" name="intereses" value="Tur"> Turísticos <br>
+                                <input type="checkbox" name="intereses" value="Soc"> Sociales <br>
+                                <input type="checkbox" name="intereses" value="Other"> Otros <br>
+                                
+                                <br><br>
+
+                                <label for="intereses_text">Descripción de intereses</label><br>
+                                <textarea name="intereses_text" cols="30" rows="10" maxlength="400" >Contanos un poco más acerca de tus intereses y qué es lo que más te gusta en cada uno de ellos... </textarea>
+                                
+                                <br><br>
+                                
+                                <label for="pais_residencia">País de Residencia</label>
+                                <select name="pais_residencia" id="pais_residencia">
+                                    <option value="Ar"> Argentina </option>
+                                    <option value="Bo"> Bolivia </option>
+                                    <option value="Br"> Brasil </option>
+                                    <option value="Co"> Colombia </option>
+                                    <option value="Cr"> Costa Rica </option>
+                                    <option value="Ch"> Chile </option>
+                                    <option value="Mx"> México </option>
+                                    <option value="Ni"> Nicaragua </option>
+                                    <option value="Pa"> Panamá </option>
+                                    <option value="Py"> Paraguay </option>
+                                    <option value="Pe"> Perú </option>
+                                    <option value="Uy"> Uruguay </option>
+                                    <option value="Ve"> Venezuela </option>
+                                    <option value="Other"> Otros </option>
+                                </select>
+                                
+                                <br><br>
+
+                                <label for="info_adicional">¿Desea Recibir información adicional a su casilla de mail? </label> <br>
+                                <input type="radio" name="info_adicional" value="Si" checked> Si, por favor. <br>
+                                <input type="radio" name="info_adicional" value="No"> No, gracias. <br>
+
+                                <br><br>     
+                    
+                                <input type="submit">
+                    
+                            </form>
+                        </fieldset>
+                    </div>
+                </section>
+                <footer>
+                    <div>
+                        <h3><a href="../index.html">Volver a la página inicial</a></h3>
+                    </div>
+                </footer>        
+            </main>
+        </body>
+        </html>
