@@ -1,0 +1,61 @@
+<!-- HTML - Ejercicio 7 - Tercer Clase
+
+    3.  Agregue a la página  un enlace a una nueva página que permita recuperar una contraseña olvidada. 
+
+        -Esta nueva página debe solicitar el ingreso del correo electrónico. 
+        -Este dato es obligatorio. 
+        -El título de la página será “Recuperación de contraseña”.-->
+
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Recuperacion de contrasenia</title>
+        </head>
+        <body>
+            <h1>Recuperación de contraseña</h1>
+        
+            <br>
+            <hr>
+            <br>
+
+            <main>
+                <section>
+                    <div>
+                        <fieldset>
+                            <legend>Completar el formulario</legend>
+                    
+                            <form action="http://www.example.com/login.php." method="post" target="_blank">
+                                                    
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" placeholder="example@tumail.com" name="email" required>
+                                
+                                <br><br>
+                    
+                                <label for="newPassword">Nueva contraseña</label>
+                                <input type="password" name="newPassword" maxlength="8" minlength="4" required>
+                    
+                                <br><br>
+
+                                <label for="repeatNewPassword">Repetir contraseña</label>
+                                <input type="password" name="repeatNewPassword" maxlength="8" minlength="4" required>
+                    
+                                <br><br>
+                    
+                                <input type="submit">
+                    
+                            </form>
+                        </fieldset>
+                    </div>
+                </section>
+                <footer>
+                    <div>
+                        <h3><a href="../index.html">Volver a la página inicial</a></h3>
+                    </div>
+                </footer>        
+
+            </main>
+        </body>
+        </html>
