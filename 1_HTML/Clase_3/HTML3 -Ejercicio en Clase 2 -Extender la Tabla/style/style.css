@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  body { padding: 20px; }
+  table {
+    border-collapse: collapse; /* Remueve el espacio entre celdas */
+  }
+  table, th, td{
+    border: 1px solid #6664;
+  }
+  table th, table td{
+    padding: 5px 10px; /* Agrega Relleno */
+  }
+  thead {
+    background-color: #125;
+    color: #f7f7f7;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #f7f7f7;
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>    
+
+</html>
+<form action="#">
+    <fieldset>
+      <legend>Consultas Virtuales - Final</legend>
+      
+      <label for="nombre" required>Nombre</label>
+      <input type="text" name="nombre">
+      
+      <label for="apellido" required>Apellido</label>
+      <input type="text" name="apellido">
+      
+      <label for="email">Email</label>
+      <input type="email" name="email">
+      
+      <label for="tema">Tema</label>
+      <select name="tema">
+        <option value="js">JS</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        
+      </select>
+      
+      <label for="consulta">Consulta</label>
+      <textarea name="consultas" cols="40" rows="40">Deje su consulta aquí...</textarea>
+      
+      <div>
+  
+        <input type="checkbox" name="rta_por_mail" checked required>
+        <span>Recibir respuesta por mail</span>
+      </div>
+      
+      <button>Enviar formulario</button>
+      
+    </fieldset>
+  </form>
+
+  <section id="datos_enviados">
+    <h2>Datos enviados:</h2>
+    <p>Aquí veras los datos al enviar el formulario</p>
+  </section>
+
+</body>

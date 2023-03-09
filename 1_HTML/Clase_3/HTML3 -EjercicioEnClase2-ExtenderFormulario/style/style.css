@@ -1,0 +1,38 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  label, input {
+    display: block;
+  }
+  label {
+    margin-top: 10px;
+  }
+  input, select, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  fieldset {
+    padding: 5px 20px;
+  }
+  input[type='checkbox'] {
+    display: inline;
+    width: auto;
+  }
+  textarea {
+    resize: vertical;
+    height: 5em;
+  }
+  
+  button {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    float: right;
+  }
+  
+  body {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+  }
