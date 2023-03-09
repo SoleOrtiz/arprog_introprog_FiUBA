@@ -40,7 +40,7 @@
                         <fieldset>
                             <legend>Completar el formulario</legend>
                     
-                            <form action="http://www.example.com/login.php." method="post">
+                            <form action="http://www.example.com/login.php." method="get">
                                 
                                 <label for="nombre">Nombre</label>
                                 <input type="text" placeholder="Tu nombre" name="nombre" maxlength="20" required>
@@ -54,6 +54,11 @@
 
                                 <label for="dni">DNI</label>
                                 <input type="number" placeholder="Tu número de DNI sin puntos" name="dni" required>
+                                
+                                <br><br>
+
+                                <label for="fecha_nacimiento">Fecha de nacimiento </label>
+                                <input type="date" name="fecha_nacimiento"">
 
                                 <br><br>
 
@@ -75,21 +80,21 @@
 
                                 <label for="intereses">Intereses (puedes elegir más de una presionando ctrl+click) </label><br>
                                 <select name="intereses" id="intereses" multiple >
-                                    <option value="S"> Culturales </option>
-                                    <option value="C"> Deportivos </option>
-                                    <option value="D"> Turísticos </option>
-                                    <option value="V"> Sociales </option>
-                                    <option value="CV"> Otros </option>
+                                    <option value="Cul"> Culturales </option>
+                                    <option value="Dep"> Deportivos </option>
+                                    <option value="Tur"> Turísticos </option>
+                                    <option value="Soc"> Sociales </option>
+                                    <option value="Other"> Otros </option>
                                 </select>
                                 
-                                <br><br>
+                            <!--<br><br>
 
                                 <label for="intereses">Intereses (puedes elegir más de una presionando ctrl+click)</label> <br>
-                                <input type="checkbox" name="intereses" value="Cult"> Culturales <br>
+                                <input type="checkbox" name="intereses" value="Cul"> Culturales <br>
                                 <input type="checkbox" name="intereses" value="Dep"> Deportivos <br>
                                 <input type="checkbox" name="intereses" value="Tur"> Turísticos <br>
                                 <input type="checkbox" name="intereses" value="Soc"> Sociales <br>
-                                <input type="checkbox" name="intereses" value="Other"> Otros <br>
+                                <input type="checkbox" name="intereses" value="Other"> Otros <br> -->
                                 
                                 <br><br>
 
@@ -124,17 +129,12 @@
 
                                 <br><br>     
                     
-                                <input type="submit">
+                                <input type="image" name="boton_enviar" src="img/submit_button_lightblue.png"  alt="Enviar formulario" width="15%" >
                     
                             </form>
                         </fieldset>
                     </div>
-                </section>
-                <footer>
-                    <div>
-                        <h3><a href="../index.html">Volver a la página inicial</a></h3>
-                    </div>
-                </footer>        
+                </section>               
             </main>
         </body>
         </html>
