@@ -1,0 +1,69 @@
+<!-- 1. Toma la solucion del primer o segundo ejercicio de HTML y agregale lo siguiente:
+
+Usando vinculacion externa
+Los subtítulos deben aparecer en color azul
+Los párrafos deben aparecer en color rojo
+2. Si no esta, añadi lo siguiente:
+
+Previo a los conceptos y luego del título, un párrafo explicando a que corresponde la descripción de los conceptos que se detallan.
+Los conceptos de HTML, CSS y JavaScript. ( Titulos y Parrafos )
+3.  Aplica estilo, usando Selectores Combinados, Anidados y Múltiples; según corresponda, para lograr que:
+
+Los párrafos sobre HTML, CSS y JavaScript, tengan un color diferente al resto de los otros párrafos.
+De igual modo, los 3 títulos deben tener el mismo color, pero distinto al de los párrafos.
+El resto de los párrafos deben tener un color diferente cada uno, pero a su vez, coincidir con el de sus títulos.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Clase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Clase 1 - HTML: Estructura y Etiquetas Básicas</h1>
+        <p id="header">Este es un breve resumen de lo visto en la primera clase de <strong>Introducción a la Programación - Argentina&nbsp;Programa 4.0</strong></p>
+    </header>
+    <br>
+    <hr>
+    <main>
+        <section class="intro">
+            <h2>¿Qué es un Navegador?</h2>
+            <p>&emsp;Es un software que permite a un usuario el acceso a la web, interpretando las páginas (o la información de destintos tipos de archivos) y muestra su contenido de forma adecuada para que la entienda. </p>
+        </section>    
+            <hr>
+        <section class="frontend">    
+            <h2>Entendiendo el FRONTEND</h2>
+            <p>&emsp;La palabra <em>"front"</em> nos habla de algo que está <em></em>"de frente"</em>, es decir, <strong> es la parte frontal de un sitio web, lo que ve y experimenta el usuario cuando ingresa e interactúa con él.</strong></p>
+            <p>&emsp;Corresponde a todo el código que se ejecuta en el navegador de un usuario, e incluye el diseño, la estructura y los estilos de un sitio. Incluye el color, el fondo, animaciones, efectos, etc. </p>
+            <p>&emsp;Dentro del frontend podemos encontrar 3 tipos de leguaje: <strong><abbr title="HiperText Marckup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> y Javascript.</strong></p>
+        </section>    
+            <hr>
+        <section id="conceptos">
+            <h3><ins>HTML</ins>: Un lenguaje que marca tendencia</h3>
+            <p>&emsp;La sigla <strong>HTML</strong> significa:</p>
+            <p><strong>&emsp;HT= Hipertextos.</strong> Hace referencia a que contiene páginas que se conectan entre sí y pueden navegarse a través de enlaces.</p>
+            <p><strong>&emsp;ML= Lenguaje de Marcado.</strong> Es un conjunto de reglas de comunicación que utiliza etiquetas para definir el contenido y estructura de una página web, como título, párrafo, etc.</p>
+            <p>&emsp;Tiene una estructura básica que inicia con la declaración <strong>!Doctype</strong>, que indica el tipo de archivo y su versión (En HTML5 aparece como <em>"!Doctype html"</em>). Y luego le sigue el código html propiamente dicho.</p>
+            
+            <p>&emsp;Este código tiene una <strong>sintaxis particular, compuesta por etiquetas</strong>. Estas tienen una estructura básica, con una apertura, un contenido y un cierre, aunque hay algunas excepciones donde no existe el cierre tradicional. Éstas a su vez, pueden tener contenido y atributos, y no pueden estar solapadas.</p>
+
+            <p>&emsp;De manera introductoria vamos a decir que <strong>las principales etiquetas en HTML son:</strong> <em>html, head, title, body, h1 al h6, y p; pero hay muchas más.</em>  </p>
+
+            <hr>
+
+            <h3><ins>CSS</ins>: Dale formato y color</h3>
+            <p>&emsp;Es un lenguaje de estilo. Se encarga del <strong>formato y diseño visual.</strong></p>
+
+            <hr>
+            
+            <h3><ins>Javascript</ins>: Sin movimiento es aburrido</h3>
+            <p>&emsp;A diferencia de los otros dos, este es un lenguaje de programación, rápido y seguro, que utilizan la mayoría de los sitios web. Permite darle vidilla al sitio web, otorgando funciones e interacciones para el usiario. Se encarga de darle <strong>dinamismo.</strong></p>
+        </section>
+            <hr>
+    </main>
+</body>
+</html>

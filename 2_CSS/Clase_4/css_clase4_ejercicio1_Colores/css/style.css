@@ -1,0 +1,23 @@
+h2 {
+    color: darkblue;  
+}
+
+p {
+    color: darkred;
+}
+
+#conceptos p {
+    color: gray;
+}
+
+#conceptos h3 {
+    color: darkslategray;
+}
+
+.intro * {
+    color: darkorchid;
+}
+
+.frontend * {
+    color: darkorange;
+}
