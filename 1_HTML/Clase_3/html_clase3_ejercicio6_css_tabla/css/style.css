@@ -1,0 +1,72 @@
+
+* {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+caption {
+    font-weight: bolder;
+    margin-bottom: 10pt;
+    text-align: left;
+}
+
+table {
+    table-layout:fixed;
+    width: 100%;
+    border-collapse: collapse;  
+    border-top: 2pt solid black;
+}
+
+thead {
+    align-content: center;
+    text-align: center;
+    
+}
+th {
+    padding: 10px;
+    border-bottom: 2pt solid black;
+}
+
+#region {
+    border-bottom: 2pt solid black;
+}
+
+.regiones th {
+    padding: 20px;
+}
+
+tbody {
+    text-align: center;
+    font-weight: lighter;
+    border-bottom: 2pt solid black;
+}
+
+tbody tr {
+    height: 20pt;
+
+}
+.primercol {
+    text-align: left;
+    padding-inline-start: 20pt;
+}
+
+.mainLine {
+    font-weight: bold;
+}
+
+.mainLine .primercol {
+    padding-inline-start: 10pt;
+}
+
+tfoot .fuente {
+    text-align:center;
+    padding: 5pt;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgba(233, 233, 233, 0.479);
+}
