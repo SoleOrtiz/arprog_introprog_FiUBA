@@ -1,0 +1,54 @@
+<!-- 
+    1. Definir dos variables de tipo numéricas. Realizar las cuatro operaciones
+    básicas: suma, resta, multiplicación y división, y mostrar los resultados en
+    la consola.
+
+    2. Definir tres cadenas de caracteres: “Argentina”, “Programa”, “4.0”, y una
+    constante que contenga un espacio en blanco. Concatenar estas variables
+    con la constante y mostrar en consola: “Argentina Programa 4.0”. -->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS externo</title>
+
+    <script src="js/js_clase5_ejercicio4.js"></script>
+</head>
+<body>
+    <div>
+        <h1><strong>¡GRACIAS POR INGRESAR LA INFORMACIÓN SOLICITADA!</strong></h1>
+        <h2>Necesitamos que por favor la corrobore a continuación</h2>
+        <br><br><br>
+        <button type="button" 
+        onclick="document.getElementById('nombre').innerHTML = nombre">Click Me!</button>
+        <button type="button" 
+        onclick="document.getElementById('apellido').innerHTML = apellido">Click Me!</button>
+        <button type="button" 
+        onclick="document.getElementById('nacionalidad').innerHTML = nacionalidad">Click Me!</button>
+        
+
+        <h3>Su nombre es:</h3>
+        <p id="nombre"></p>
+        <br>
+        <h3>Su apellido es:</h3>
+        <p id="apellido"></p>
+        <br>        
+        <h3>Su nacionalidad es:</h3>
+        <p id="nacionalidad"></p>
+        <br>
+
+    </div>
+<!--    <script>
+        let parametros = new URLSearchParams (window , location, search);
+
+        let nombre = parametros.get('nombre');
+        let apellido = parametros.get('apellido');
+        let nacionalidad = parametros.get('nacionalidad');
+
+        
+    </script>-->
+</body>
+</html>
