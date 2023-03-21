@@ -8,15 +8,21 @@
     Si No: Mostrar que “No tiene la edad suficiente”
 */
 
-let notificaciones = confirm ("¿Desea recibir notificaciones por mail?");
+function recibirNotificaciones () {
+    let notificaciones = confirm ("¿Desea recibir notificaciones por mail?");
 
-if (notificaciones = true) {
-    let email = prompt ("A continuación escriba su casilla de mail:");
-    let edad = parseInt (prompt ("Y ahora su edad:"));
-    
-    if (edad >= 18) {
-        document.write ("<h3>El email ingresado es: </h3>" + email);
+    if (notificaciones == true) {
+        let email = prompt ("A continuación escriba su casilla de mail:");
+        let edad = parseInt (prompt ("Y ahora su edad:"));
+        
+        if (edad >= 18) {
+            document.write ("<h3>El email ingresado es: </h3>" + email);
+        } else {
+            document.write ("<h3>No tiene la edad suficiente.</h3>");
+        }
     } else {
-        document.write ("<h3>No tiene la edad suficiente.</h3>");
+        document.write ("<h2>Si te arrepentiste presiona F5.</h2>")
     }
 }
+
+recibirNotificaciones ()
