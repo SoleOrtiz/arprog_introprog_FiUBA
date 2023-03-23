@@ -13,35 +13,35 @@
     <section>
         <fieldset>
             <h1>Datos</h1>
-            <form action="" method="post">
+            <form action="pages/datosFormulario.html" target="_blank" method="get" id="formulario">
                 
                 <label for="nombre">Nombre </label>
-                <input type="text" name="nombre" maxlength="20" minlength="2" ><br><br>
+                <input type="text" name="nombre" id="nombre" maxlength="20" minlength="2" required><br><br>
 
                 <label for="apellido">Apellido </label>
-                <input type="text" name="apellido" maxlength="25" minlength="2" ><br><br>
+                <input type="text" name="apellido"  id="apellido" maxlength="25" minlength="2" required><br><br>
 
                 <label for="edad">Edad </label>
-                <input type="number" name="edad" min="18" max="120"><br><br>
+                <input type="number" name="edad" id="edad" required><br><br>
 
                 <label for="dni">DNI </label>
-                <input type="number" name="dni" minlength="6"><br><br>
+                <input type="number" name="dni" id="dni"  minlength="6" required><br><br>
 
                 <label for="email">Correo electrónico </label>
-                <input type="email" name="email"><br><br>
+                <input type="email" name="email" id="email" required><br><br>
 
-                <button>Cargar</button>
+                <button id="submit" type="submit" onclick="validarFormulario ()">Cargar</button>
             </form>
 
             <table>
                 <caption style="align-content: center;">Tabla</caption>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Apellido</th>
-                        <th>Edad</th>
-                        <th>DNI</th>
-                        <th>Correo electrónico</th>
+                        <th id="tablaN-ombre">Nombre</th>
+                        <th id="tablaApellido">Apellido</th>
+                        <th id="tablaEdad">Edad</th>
+                        <th id="tablaDni">DNI</th>
+                        <th id="tablaEmail">Correo electrónico</th>
                     </tr>
                 </thead>
             </table>
