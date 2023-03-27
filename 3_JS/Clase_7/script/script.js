@@ -33,11 +33,11 @@ function validarFormulario() {
       //document.getElementById("nuevatabla").innerHTML= "<th>" + nombre + "</th>" nombre +"</th>" ;
     
     
-    document.getElementById("tablaNombre").innerHTML=nombre;
-    document.getElementById("tablaApellido").innerHTML= apellido;
-    document.getElementById("tablaEdad").innerHTML= edad;
-    document.getElementById("tablaDni").innerHTML= dni;
-    document.getElementById("tablaEmail").innerHTML= email;
+    document.getElementById("tablaNombre").innerHTML+=nombre + "<br>";
+    document.getElementById("tablaApellido").innerHTML+= apellido+ "<br>";
+    document.getElementById("tablaEdad").innerHTML+= edad+ "<br>";
+    document.getElementById("tablaDni").innerHTML+= dni+ "<br>";
+    document.getElementById("tablaEmail").innerHTML+= email+ "<br>";
 
 }
 
