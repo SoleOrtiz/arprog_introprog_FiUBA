@@ -39,6 +39,10 @@ function validarFormulario() {
     document.getElementById("tablaDni").innerHTML+= dni+ "<br>";
     document.getElementById("tablaEmail").innerHTML+= email+ "<br>";
 
+    formulario.reset ()
+
+
+
 }
 
     
