@@ -30,14 +30,13 @@ function validarFormulario() {
         return false;
       }
 
-      //document.getElementById("nuevatabla").innerHTML= "<th>" + nombre + "</th>" nombre +"</th>" ;
-    
-    
-    document.getElementById("tablaNombre").innerHTML+=nombre + "<br>";
-    document.getElementById("tablaApellido").innerHTML+= apellido+ "<br>";
-    document.getElementById("tablaEdad").innerHTML+= edad+ "<br>";
-    document.getElementById("tablaDni").innerHTML+= dni+ "<br>";
-    document.getElementById("tablaEmail").innerHTML+= email+ "<br>";
+      //document.getElementById("datosFormulario").innerHTML+= "<td>" + nombre + "</td>" + "<td>" + apellido +"</td>" + "<td>" + edad +"</td>" + "<td>" + dni +"</td>" + "<td>" + email +"</td>"+ "<tr></tr>";
+          
+      document.getElementById("tablaNombre").innerHTML+=nombre + "<br>";
+      document.getElementById("tablaApellido").innerHTML+= apellido+ "<br>";
+      document.getElementById("tablaEdad").innerHTML+= edad+ "<br>";
+      document.getElementById("tablaDni").innerHTML+= dni+ "<br>";
+      document.getElementById("tablaEmail").innerHTML+= email+ "<br>";
 
     formulario.reset ()
 
