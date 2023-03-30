@@ -1,18 +1,17 @@
 fieldset {
     position:relative;
-    width: 100%;
-    background: linear-gradient(90deg, rgb(221, 86, 86) , black 70% )
+    border:none;
+    width: 100%;  
 }
 
 body{
     color: rgb(20, 19, 19);
-    letter-spacing: 2px;
-    
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, rgb(221, 86, 86) , rgb(21, 20, 20) 80% )    
 }
 
-
 form {
-  display: flex;
+    display: flex;
     flex-direction: column;
     max-width: 500px;
     margin: 0 auto;
@@ -20,65 +19,63 @@ form {
     padding: 20px;
     background-color: rgb(236, 226, 225);
     border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
 }
 
-    form label {
-        margin-bottom: 10px;
-        font-weight: 100;
-        font-size: 1 rem;
-    }
-    form input {
-        padding: 10px;
-        margin-bottom: 5px;
-        border: 1px solid #776969;
-        border-radius: 5px;
-    }
+form label {
+    color: gray;
+    font-size: 10pt;
+}
 
-    form button {  
-        
-        padding: 10px;
-        background-color: #db0909;
-        color: white;
-        font-size: 1 rem;
-        font-weight: 100;
-        border: none;
-        border-radius: 10px;
-        cursor: grab;
-        margin-left: 10%;
-       padding-left: 130px;
-       padding-right: 130px;
-     
-    }
-    h1 {
-        text-align: center;
-        color: black;
-    }
-    
-    div{
-        text-align: center;
-        
-    }
+form input {
+    background:none;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid grey;
+    align-self:center; width:250px;
+}
+
+form button {  
+    align: center;
+    padding: 10px;
+    background-color: #750e0e;
+    color: white;
+    font-size: 1 rem;
+    font-weight: 100;
+    border: none;
+    border-radius: 20px;
+    cursor: grab;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1 {
+    font-size:20pt;
+    margin-top:20px;
+    text-align: center;
+}
+
 table tr th{
-background-color: rgb(0, 0, 0);
-font-family: 'Times New Roman', Times, serif;
-color: white;
-padding: 10px 70px;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 10px 70px;
 }
 
 table tr td {
     background-color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 0, 0);
-    padding: 10px 70px;
-    
-    }
+    padding: 10px 70px;    
+}
 
 table{
     margin:0 auto;
 }
 
 caption{
-        color: rgb(255, 255, 255);
-      font-weight: bolder;
-      margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
