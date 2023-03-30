@@ -36,7 +36,7 @@ form input {
 }
 
 form button {  
-    align: center;
+    align-self: center;
     padding: 10px;
     background-color: #750e0e;
     color: white;
@@ -45,8 +45,8 @@ form button {
     border: none;
     border-radius: 20px;
     cursor: grab;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 h1 {
